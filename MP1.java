@@ -102,21 +102,20 @@ public class MP1 {
                   
          Collections.sort(finalWords, new Comparator<String>() {    	 
 
-			@Override
-			public int compare(String o1, String o2) {
-				
-				if(map.get(o1)<map.get(o2))
-				{
-					return 1;
-				}
-				else if (map.get(o1)>map.get(o2))
-				{
-					return -1;					
-				}
-				int cmp = o1.compareTo(o2);
+		@Override
+		public int compare(String o1, String o2) {
+		if(map.get(o1)<map.get(o2))
+		{
+			return 1;
+		}
+		else if (map.get(o1)>map.get(o2))
+		{
+			return -1;					
+		}
+		int cmp = o1.compareTo(o2);		
                 return cmp;
-			}      	        	 
-		});
+		}      	        	 
+	});
          
          for (int j = 0; j < ret.length; j++) {
              ret[j] = finalWords.get(j);    
